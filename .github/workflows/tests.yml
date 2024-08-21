@@ -1,5 +1,3 @@
-
-# help me autocomplete this test.yml to trigger github actions 
 name: Tests
 
 on:
@@ -29,5 +27,6 @@ jobs:
       - name: Run tests
         run: |
           python -m pytest tests/
-
-          
+      - name: Post success message
+        if: success()
+        run: echo "All tests passed successfully!"
