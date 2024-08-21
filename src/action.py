@@ -1,2 +1,2 @@
 def action():
-    return "action invoked!"
+    return "actions invoked!"
